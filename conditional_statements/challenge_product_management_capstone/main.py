@@ -6,5 +6,7 @@ if product_type == "Perishable":
         print("30% discount applied")
     elif 4 <= days_until_expiration <= 6 and stock_level > 50:
         print("20% discount applied")
-    elif days_until_expiration > 6 or  stock_level <
-        
+    elif days_until_expiration > 6 or stock_level <= 50:
+        print("10% discount applied")
+else:
+    print("No discount available for non-perishable items.")
